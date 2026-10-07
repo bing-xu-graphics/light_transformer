@@ -1,0 +1,7 @@
+addict
+flash-attn
+numpy
+scikit-learn
+spconv-cu124
+tensorboard
+timm

@@ -1,0 +1,21 @@
+.DS_Store
+
+# Local audit inputs. Never publish these copies.
+/infinigen.zip
+/infinigen/
+
+# Local training artifacts until approved for release.
+/checkpoints_private/
+/test_scenes_private/
+
+# Publish large checkpoints as GitHub release assets.
+/weights/*.ckpt
+/example_scenes/54f6ceaa/teaser_scene_pbrt.zip
+
+# Training outputs.
+/outputs/
+*.pyc
+__pycache__/
+*.egg-info/
+/build/
+/dist/

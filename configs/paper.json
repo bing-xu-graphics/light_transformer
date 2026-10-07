@@ -1,0 +1,15 @@
+{
+  "seed": 42,
+  "scene_points": 20000,
+  "query_points": 8192,
+  "encoder": "ptv3",
+  "depth": 6,
+  "dimension": 128,
+  "local_neighbors": 32,
+  "batch_size": 3,
+  "learning_rate": 0.0002,
+  "weight_decay_argument": 0.0001,
+  "optimizer_weight_decay": 0.0,
+  "training_steps": 2000000,
+  "checkpoint_step": 350000
+}

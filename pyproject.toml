@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "light-transformer"
+version = "0.1.0"
+description = "Generalizable Lighting Models via Light-Transport Transformers"
+requires-python = ">=3.10"
+dependencies = [
+    "addict",
+    "flash-attn",
+    "numpy",
+    "scikit-learn",
+    "spconv-cu124",
+    "tensorboard",
+    "timm",
+    "torch==2.5.1",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

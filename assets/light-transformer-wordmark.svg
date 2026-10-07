@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="112" viewBox="0 0 960 112" role="img" aria-labelledby="title description">
+  <title id="title">Light Transformer</title>
+  <desc id="description">A Generalizable Light Transport 3D Embedding for Global Illumination</desc>
+  <text x="480" y="42" text-anchor="middle" fill="#41c95a" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="700">Light Transformer</text>
+  <text x="480" y="86" text-anchor="middle" fill="#41c95a" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="500">A Generalizable Light Transport 3D Embedding for Global Illumination</text>
+</svg>
