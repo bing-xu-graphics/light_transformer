@@ -8,8 +8,7 @@
 /checkpoints_private/
 /test_scenes_private/
 
-# Publish large checkpoints as GitHub release assets.
-/weights/*.ckpt
+# Publish the teaser scene archive as a GitHub release asset.
 /example_scenes/54f6ceaa/teaser_scene_pbrt.zip
 
 # Training outputs.

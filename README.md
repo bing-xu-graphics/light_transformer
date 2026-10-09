@@ -32,7 +32,7 @@ We later found that some surface normals in the paper's procedurally generated t
 - [`train.py`](train.py): training pipeline
 - [`infer.py`](infer.py): chunked inference with local decoding
 - [`configs/paper.json`](configs/paper.json): model and training settings used for the paper
-- [`weights`](weights): pretrained checkpoint download information and checksum
+- [`weights`](weights): pretrained checkpoint tracked with Git LFS, download instructions, and checksum
 - [`example_scenes`](example_scenes): processed inputs and references for six scenes from the paper's irradiance comparison, plus the downloadable teaser 3D scene
 - [`dataset_helper`](dataset_helper): scene-generation notes and Blender/PBRT preparation workflow
 - [`third_party/pointnet2_ops_lib`](third_party/pointnet2_ops_lib): source-only CUDA farthest-point sampling dependency
@@ -57,6 +57,15 @@ pip install -e . --no-deps
 CUDA extensions are compiled for the local GPU during installation.
 
 ## 🏎️ Run an example
+
+Fetch the pretrained checkpoint with [Git LFS](https://git-lfs.com/) before running inference:
+
+```bash
+git lfs install
+git lfs pull
+```
+
+See [`weights/README.md`](weights/README.md) for the checkpoint size and checksum.
 
 ```bash
 python infer.py \
