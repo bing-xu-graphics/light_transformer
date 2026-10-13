@@ -20,6 +20,10 @@ Code and release assets for the paper.
 
 This repository contains the base model, training and inference code, pretrained weights, a compact test set, and documentation for the scene preparation workflow.
 
+## Release review and license status
+
+We are seeking release review. Release approval and the project license are pending; no project-level license has been granted at this time. Licensing terms for the project code, pretrained weights, and example data will be clarified following review. Third-party code and assets remain subject to their existing licenses and notices.
+
 ## A note on the original development
 
 The core development behind this project was completed by May 2025, before LLMs and coding agents became as capable as they are today. The released pipeline records the workflow used for the paper. We encourage using coding agents, Blender MCP, and newer procedural tools to build cleaner, more structured, and more varied 3D datasets.
