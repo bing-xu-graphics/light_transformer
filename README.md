@@ -144,6 +144,8 @@ See [`dataset_helper/THIRD_PARTY.md`](dataset_helper/THIRD_PARTY.md) for details
 }
 ```
 
-## Release review and license status
+## License
 
-We are seeking release review. Release approval and the project license are pending; no project-level license has been granted at this time. Licensing terms for the project code, pretrained weights, and example data will be clarified following review. Third-party code and assets remain subject to their existing licenses and notices.
+The project code and documentation are licensed for educational, research, and non-profit purposes under the terms in [`LICENSE`](LICENSE). Commercial use requires separate permission from the applicable rights holders; contact the project maintainers to arrange licensing.
+
+This license does not cover pretrained weights or example data; their licensing terms remain pending unless separately stated. Third-party code and assets remain subject to their existing licenses and notices.
