@@ -109,15 +109,15 @@ Query features and targets use chunk suffixes `0` through `127`. The scene-list 
 
 ## 🏎️ Example data
 
-Raw PBRT training scenes can be 500 MB to 2 GB each and contain upstream generated assets, so the full training set is not redistributed here. The repository provides compact model-ready inputs and reference outputs for selected paper scenes, plus the teaser scene as a separate licensed Release asset. See [`dataset_helper`](dataset_helper) for generating new source scenes.
+Raw PBRT training scenes can be 500 MB to 2 GB each and contain upstream generated assets, so the full training set is not redistributed here. The repository provides compact model-ready inputs and reference outputs for paper test scenes. See [`dataset_helper`](dataset_helper) for generating new source scenes.
 
 ## 🏎️ Scene generation
 
 The original 3D scenes are stored on the UCSD cluster and are difficult to download and transfer at dataset scale. For most users, it will be faster to run the scene-generation workflow and create new scenes locally. See [`dataset_helper`](dataset_helper) for the setup notes, recorded workflow, and third-party dependencies.
 
-Plan storage before generating a large dataset. At roughly 500 MB to 2 GB per raw scene, 14,000 scenes require about 7 to 28 TB for source data alone. Rendered outputs, processed arrays, logs, and temporary files require additional space. Reserve enough cluster storage or local SSD capacity, with extra working space for interrupted and repeated jobs.
+We hope to remind users to plan storage before generating a large dataset. At roughly 500 MB to 2 GB per raw scene, 14,000 scenes require about 7 to 28 TB for source data alone. Rendered outputs, processed arrays, logs, and temporary files require additional space. Reserve enough cluster storage or local SSD capacity. You wouldn’t like to know that I had to urgently place Amazon orders for SSDs as we were approaching the deadline. :>
 
-We encourage using coding agents and Blender MCP to improve the workflow, including scene organization, material and lighting checks, surface-normal validation, and support for more varied environments.
+We encourage using coding agents and Blender MCP to improve the scene-generation workflow, including scene organization, material and lighting checks, surface-normal checks etc. 
 
 The scene-generation pipeline is modular. Feel free to change the source scene representation or renderer interface if another renderer better fits your workflow. To use the released model, convert the results to the scene-point, query-point, and reference-array formats documented in [`example_scenes/README.md`](example_scenes/README.md).
 
@@ -145,7 +145,5 @@ See [`dataset_helper/THIRD_PARTY.md`](dataset_helper/THIRD_PARTY.md) for details
 ```
 
 ## License
-
-The project code and documentation are licensed for educational, research, and non-profit purposes under the terms in [`LICENSE`](LICENSE). Commercial use requires separate permission from the applicable rights holders; contact the project maintainers to arrange licensing.
-
-This license does not cover pretrained weights or example data; their licensing terms remain pending unless separately stated. Third-party code and assets remain subject to their existing licenses and notices.
+We are seeking release review. Release approval and the project license are pending; no project-level license has been granted at this time. Licensing terms for the project code, pretrained weights, and example data will be clarified following review. Third-party code and assets remain subject to their existing licenses and notices.
+But feel free to use it for research purpose. 
